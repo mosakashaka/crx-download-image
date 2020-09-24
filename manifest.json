@@ -1,0 +1,26 @@
+{
+  "name": "download-loaded-image",
+  "version": "1.0",
+  "minimum_chrome_version": "10.0",
+  "description": "Download the image when loaded",
+  "devtools_page": "index.html",
+  "icons" :{
+    "128" : "bg.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "declarativeContent",
+    "downloads",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "bg.png",
+    "default_title": "TrackImage",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
